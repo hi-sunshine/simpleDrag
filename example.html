@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Drag Example</title>
+	<style>
+		#target{
+			position: absolute;
+			top:10px;
+			left:10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="target" style="background-color:red; width:200px; height:200px;">
+		<div id="bar" style="background-color:yellow; width:200px; height:50px;">
+			<span>Bar Element</span>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="drag.js"></script>
+<script type="text/javascript">
+	var bar = document.getElementById('bar');
+	var target = document.getElementById('target');
+	setDrag(bar, target);
+</script>
+</html>
